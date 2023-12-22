@@ -5,17 +5,3 @@ env:
   COMPOSE_DOCKER_CLI_BUILD: "1"
   CURRENT_UID:
     sh: echo "`id -u`:`id -g`"
-
-commands:
-  build:
-    description: build dev server image
-    cmd: |
-      docker build \
-        -f pyproto4.Dockerfile \
-        -t featureflags-protoc \
-        .
-
-  protoc:
-    description: build protoc files
-    depends: [ build ]
-    cmd: docker-compose run --rm protoc

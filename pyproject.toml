@@ -11,6 +11,17 @@ dependencies = []
 requires-python = ">=3.11"
 license = {text = "MIT"}
 
+[tool.pdm.scripts]
+protoc = "./scripts/protoc.sh"
+
+[project.optional-dependencies]
+protoc = [
+    "grpcio-tools>=1.59.0",
+    "hiku==0.7.0rc35",
+    "protobuf>=4.24.4",
+    "grpclib>=0.4.6",
+]
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
