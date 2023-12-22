@@ -1,0 +1,16 @@
+[project]
+name = "evo-featureflags-protobuf"
+version = "0.3.0"
+description = "Protocol Buffers stub files for feature flags service"
+authors = [
+    {name = "d.zakharchuk", email = "d.zakharchuk@smartweb.com.ua"},
+    {name = "m.kindritskiy", email = "m.kindritskiy@smartweb.com.ua"},
+    {name = "Vladimir Magamedov", email = "vladimir@magamedov.com"},
+]
+dependencies = []
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

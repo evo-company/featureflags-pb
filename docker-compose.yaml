@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  base: &base
+    image: featureflags-protoc
+    init: true
+    working_dir: /app
+    environment:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+      PYTHONIOENCODING: UTF-8
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./scripts:/app/scripts
+      - ./featureflags_protobuf:/app/featureflags_protobuf
+
+  protoc:
+    <<: *base
+    command: ./scripts/protoc.sh
+#    command: bash
