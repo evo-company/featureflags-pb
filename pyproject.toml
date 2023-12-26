@@ -17,7 +17,7 @@ protoc = "./scripts/protoc.sh"
 [project.optional-dependencies]
 protoc = [
     "grpcio-tools>=1.59.0",
-    "hiku==0.7.0rc35",
+    "hiku==0.7.1",
     "protobuf>=4.24.4",
     "grpclib>=0.4.6",
 ]

@@ -5,7 +5,7 @@
 groups = ["default", "protoc"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:f6eaac25d527bce24a178d8697bcb376d48562eefb2ed111697305cab59aa453"
+content_hash = "sha256:1d95505814dcd370f2b25a97bb8b5c95678bbc6d5152efca7bc9aaf6d1962c50"
 
 [[package]]
 name = "grpcio"
@@ -99,13 +99,13 @@ files = [
 
 [[package]]
 name = "hiku"
-version = "0.7.0rc35"
+version = "0.7.1"
 requires_python = ">=3.7"
 summary = "Library to implement Graph APIs"
 groups = ["protoc"]
 files = [
-    {file = "hiku-0.7.0rc35-py3-none-any.whl", hash = "sha256:47b3cb06d9fa3218f2f734aa8bc742ca8d5860ae7bfb0f6fb950248bc006525c"},
-    {file = "hiku-0.7.0rc35.tar.gz", hash = "sha256:01ba46ba059674f9549033e8830d2499b23545ed5b87fc6001de1c4e8c6c2622"},
+    {file = "hiku-0.7.1-py3-none-any.whl", hash = "sha256:82630eb9a50a55d02a50bdc09b7ce704a7f5ccd518c12af5cd9ddfef1b8d54f9"},
+    {file = "hiku-0.7.1.tar.gz", hash = "sha256:8456a617ffbc72adc4849c379ad99757579b426fde2e47843573289a59cfca36"},
 ]
 
 [[package]]
